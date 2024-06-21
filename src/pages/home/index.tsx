@@ -1,15 +1,18 @@
 import { Header } from '@/components/header'
 import { ArrowRight } from 'lucide-react'
+import { Card } from '@/components/card/card'
+import { CreatorsCarousel } from './components/creatorsCarousel/creatorsCarousel'
+import { Footer } from '@/components/footer'
+
 import HeroCard from '@/assets/images/home/heroCards.svg'
 import CardHighlight from '@/assets/images/home/cardHiglight.svg'
+import MeetCards from '@/assets/images/home/meetCards.svg'
 import LogoWyre from '@/assets/images/home/brands/wyre.png'
 import LogoOkx from '@/assets/images/home/brands/okx.png'
 import LogoEnjin from '@/assets/images/home/brands/enjin.png'
 import LogoZengo from '@/assets/images/home/brands/zengo.png'
 import LogoAlpha from '@/assets/images/home/brands/alpha.png'
 import LogoMath from '@/assets/images/home/brands/math.png'
-import { Card } from '@/components/card/card'
-import { CreatorsCarousel } from './components/creatorsCarousel/creatorsCarousel'
 
 export function Home() {
   return (
@@ -38,7 +41,7 @@ export function Home() {
           </button>
         </div>
 
-        <div className="flex w-full items-center justify-center before:bg-no-repeat after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top">
+        <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat">
           <img src={HeroCard} alt="" />
         </div>
       </section>
@@ -133,6 +136,54 @@ export function Home() {
           <CreatorsCarousel />
         </div>
       </section>
+
+      <section className="mt-24 px-6">
+        <div className="flex flex-col items-start justify-start gap-12 ">
+          <h3 className="text-left text-4xl font-black leading-snug tracking-tight">
+            Meet the Visionaries: NFT Creators Spotlight
+          </h3>
+
+          <span className="h-1 w-32 rounded-full bg-gradient" />
+
+          <p className="mt-4 text-left text-base font-normal leading-relaxed tracking-wide opacity-80">
+            Dive into the world of our talented NFT creators, where innovation
+            and artistry collide. Each artist brings a unique perspective,
+            transforming digital canvases into extraordinary works of art.
+            Discover the stories behind their creations and the passion that
+            drives them to push the boundaries of what&apos;s possible.
+            <br />
+            <br />
+            Unveil the magic of digital artistry today.
+          </p>
+
+          <button className="flex h-12 w-60 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide">
+            Explore Our Creators
+          </button>
+        </div>
+
+        <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center">
+          <img src={MeetCards} alt="" />
+        </div>
+      </section>
+
+      <section className="mt-20 w-full px-6">
+        <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl bg-line-blue px-4 py-20">
+          <h3 className="text-center text-3xl font-black leading-snug tracking-tight">
+            Secure Nft Trading Platform
+          </h3>
+
+          <p className="text-center text-base font-normal leading-relaxed tracking-wide opacity-80">
+            An NFT is a unit of a data stored on a digital ledger, called a
+            blockchain
+          </p>
+
+          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gray-100 px-4 py-3 text-base font-semibold leading-relaxed tracking-wide text-blue-500">
+            Explore NFTs Now
+          </button>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   )
 }

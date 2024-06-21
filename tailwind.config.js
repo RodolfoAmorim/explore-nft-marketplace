@@ -41,6 +41,7 @@ export default {
       },
       white: '#ffffff',
       black: '#000000',
+      transparent: 'rgba(255,255,255,0.0)',
     },
     extend: {
       fontFamily: {
