@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 
 export function Footer() {
   return (
-    <footer className="relative mt-32 flex w-full flex-col items-center justify-start gap-12 px-6 pb-8 text-center before:absolute before:inset-0 before:top-20 before:-z-10 before:bg-ellipse before:bg-top">
+    <footer className="container relative mx-auto mt-32 flex w-full flex-col items-center justify-start gap-12 px-6 pb-8 text-center before:absolute before:inset-0 before:top-20 before:-z-10 before:bg-ellipse before:bg-top">
       <strong className="z-10 text-6xl font-bold leading-relaxed tracking-tight text-gray-100">
         Explorer
       </strong>
 
-      <div className="flex w-full flex-col items-center justify-start gap-12">
-        <div className="w-full">
+      <div className="flex w-full flex-col items-center justify-start gap-12 md:flex-row md:gap-0">
+        <div className="w-full md:flex-1">
           <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
             Marketplace
           </h6>
@@ -43,7 +43,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="w-full">
+        <div className="w-full md:flex-1">
           <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
             Company
           </h6>
@@ -77,41 +77,41 @@ export function Footer() {
             </li>
           </ul>
         </div>
-      </div>
 
-      <div className="w-full">
-        <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
-          Account
-        </h6>
+        <div className="w-full md:flex-1">
+          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
+            Account
+          </h6>
 
-        <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3">
-          <li>
-            <Link
-              to="/"
-              className="text-base leading-snug tracking-wider opacity-80"
-            >
-              Profile
-            </Link>
-          </li>
+          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3">
+            <li>
+              <Link
+                to="/"
+                className="text-base leading-snug tracking-wider opacity-80"
+              >
+                Profile
+              </Link>
+            </li>
 
-          <li>
-            <Link
-              to="/"
-              className="text-base leading-snug tracking-wider opacity-80"
-            >
-              My Collection
-            </Link>
-          </li>
+            <li>
+              <Link
+                to="/"
+                className="text-base leading-snug tracking-wider opacity-80"
+              >
+                My Collection
+              </Link>
+            </li>
 
-          <li>
-            <Link
-              to="/"
-              className="text-base leading-snug tracking-wider opacity-80"
-            >
-              Create & Update
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link
+                to="/"
+                className="text-base leading-snug tracking-wider opacity-80"
+              >
+                Create & Update
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="flex w-full flex-col items-center justify-start gap-3">

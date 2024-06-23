@@ -12,7 +12,7 @@ export function CreatorsCarousel() {
     <Carousel opts={{ loop: true }}>
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, i) => (
-          <CarouselItem key={i}>
+          <CarouselItem key={i} className="md:basis-1/2">
             <Creator />
           </CarouselItem>
         ))}

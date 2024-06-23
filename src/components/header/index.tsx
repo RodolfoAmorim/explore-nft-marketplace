@@ -16,7 +16,7 @@ export function Header() {
   }
 
   return (
-    <header className="flex h-20 w-full items-center justify-between gap-2 px-6 before:absolute before:left-0 before:top-0 before:-z-10 before:h-40 before:w-52 before:bg-ellipse before:bg-[length:18.5rem_18.5rem] before:bg-right-bottom">
+    <header className="container flex h-20 w-full items-center justify-between gap-2 px-6 before:absolute before:left-0 before:top-0 before:-z-10 before:h-40 before:w-52 before:bg-ellipse before:bg-[length:18.5rem_18.5rem] before:bg-right-bottom">
       <strong className="z-10 text-2xl font-bold leading-relaxed tracking-tight text-gray-100">
         Explorer
       </strong>

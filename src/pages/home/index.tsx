@@ -19,7 +19,7 @@ export function Home() {
     <div className="min-h-svh w-full text-gray-100">
       <Header />
 
-      <section className="relative flex w-full flex-col items-center justify-start gap-16 px-6 pt-12">
+      <section className="container relative flex w-full flex-col items-center justify-start gap-16 px-6 pt-12 md:mx-auto">
         <div className="flex w-full flex-col items-start justify-start gap-8">
           <h4 className="font-base relative inline-block px-2 py-3 uppercase leading-normal tracking-wide after:absolute after:inset-0 after:-bottom-[3px] after:top-auto after:h-[3px] after:bg-gradient">
             the nft market
@@ -41,12 +41,12 @@ export function Home() {
           </button>
         </div>
 
-        <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat">
+        <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat md:relative md:max-w-96 md:after:-inset-20 md:after:h-auto md:after:w-auto md:after:bg-center">
           <img src={HeroCard} alt="" />
         </div>
       </section>
 
-      <aside className="my-20 grid w-full grid-cols-2 gap-4 px-6 opacity-80">
+      <aside className="container mx-auto my-20 grid w-full grid-cols-2 items-center justify-center gap-4 px-6 opacity-80">
         <img src={LogoAlpha} alt="" />
         <img src={LogoEnjin} alt="" />
         <img src={LogoMath} alt="" />
@@ -55,9 +55,9 @@ export function Home() {
         <img src={LogoZengo} alt="" />
       </aside>
 
-      <section className="flex w-full flex-col items-center justify-start gap-12 px-6">
+      <section className="container mx-auto flex w-full flex-col items-center justify-start gap-12 px-6">
         <div className="w-full bg-ellipse bg-cover bg-center bg-no-repeat">
-          <img src={CardHighlight} alt="" />
+          <img src={CardHighlight} alt="" className="mx-auto" />
         </div>
 
         <div className="flex w-full flex-col items-start justify-start gap-12">
@@ -93,12 +93,12 @@ export function Home() {
             </p>
           </div>
 
-          <div className="flex w-full flex-col items-center justify-start gap-4">
-            <button className="flex h-12 w-full items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide">
+          <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row md:justify-center">
+            <button className="flex h-12 w-full items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide md:w-auto md:flex-1">
               Place a Bid
             </button>
 
-            <button className="relative flex w-full items-center justify-center bg-slate-900 px-4 py-3 text-base font-semibold leading-relaxed tracking-wider after:absolute after:-inset-px after:-z-10 after:rounded after:bg-gradient">
+            <button className="relative flex w-full items-center justify-center bg-slate-900 px-4 py-3 text-base font-semibold leading-relaxed tracking-wider after:absolute after:-inset-px after:-z-10 after:rounded after:bg-gradient md:w-auto md:flex-1">
               View Art
             </button>
           </div>
@@ -115,7 +115,7 @@ export function Home() {
           a universe of possibilities
         </p>
 
-        <div className="mt-12 grid w-full grid-cols-1 gap-8">
+        <div className="mt-12 grid w-full grid-cols-1 gap-8 md:grid-cols-2">
           {Array.from({ length: 4 }).map((_, i) => (
             <Card key={i} />
           ))}
@@ -137,7 +137,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mt-24 px-6">
+      <section className="container mx-auto mt-24 px-6">
         <div className="flex flex-col items-start justify-start gap-12 ">
           <h3 className="text-left text-4xl font-black leading-snug tracking-tight">
             Meet the Visionaries: NFT Creators Spotlight
@@ -161,12 +161,12 @@ export function Home() {
           </button>
         </div>
 
-        <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center">
-          <img src={MeetCards} alt="" />
+        <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center before:bg-no-repeat">
+          <img src={MeetCards} alt="" className="md:mx-auto md:max-w-[32rem]" />
         </div>
       </section>
 
-      <section className="mt-20 w-full px-6">
+      <section className="container mx-auto mt-20 w-full px-6">
         <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl bg-line-blue px-4 py-20">
           <h3 className="text-center text-3xl font-black leading-snug tracking-tight">
             Secure Nft Trading Platform
