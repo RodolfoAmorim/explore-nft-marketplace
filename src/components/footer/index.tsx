@@ -2,18 +2,18 @@ import { Link } from 'react-router-dom'
 
 export function Footer() {
   return (
-    <footer className="container relative mx-auto mt-32 flex w-full flex-col items-center justify-start gap-12 px-6 pb-8 text-center before:absolute before:inset-0 before:top-20 before:-z-10 before:bg-ellipse before:bg-top">
-      <strong className="z-10 text-6xl font-bold leading-relaxed tracking-tight text-gray-100">
+    <footer className="container relative mx-auto mt-32 flex w-full flex-col items-center justify-start gap-12 px-6 pb-8 text-center before:absolute before:inset-0 before:top-20 before:-z-10 before:bg-ellipse before:bg-top lg:flex-row lg:flex-wrap lg:justify-center xl:mt-48 xl:flex-row">
+      <strong className="z-10 text-6xl font-bold leading-relaxed tracking-tight text-gray-100 lg:w-full xl:w-auto">
         Explorer
       </strong>
 
-      <div className="flex w-full flex-col items-center justify-start gap-12 md:flex-row md:gap-0">
+      <div className="flex w-full flex-col items-center justify-start gap-12 md:flex-row md:gap-0 xl:w-auto xl:flex-1">
         <div className="w-full md:flex-1">
-          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
+          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide xl:text-left xl:text-2xl">
             Marketplace
           </h6>
 
-          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3">
+          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3 xl:items-start">
             <li>
               <Link
                 to="/"
@@ -44,11 +44,11 @@ export function Footer() {
         </div>
 
         <div className="w-full md:flex-1">
-          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
+          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide xl:text-left xl:text-2xl">
             Company
           </h6>
 
-          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3">
+          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3 xl:items-start">
             <li>
               <Link
                 to="/"
@@ -79,11 +79,11 @@ export function Footer() {
         </div>
 
         <div className="w-full md:flex-1">
-          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
+          <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide xl:text-left xl:text-2xl">
             Account
           </h6>
 
-          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3">
+          <ul className="mt-3 flex w-full flex-col items-center justify-start gap-3 xl:items-start">
             <li>
               <Link
                 to="/"
@@ -114,8 +114,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-start gap-3">
-        <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide">
+      <div className="flex w-full flex-col items-center justify-start gap-3 lg:max-w-96">
+        <h6 className="block w-full text-2xl font-semibold leading-relaxed tracking-wide xl:text-left xl:text-2xl">
           Subscribe to out Newsletter
         </h6>
 
@@ -123,7 +123,7 @@ export function Footer() {
           <input
             type="text"
             placeholder="Enter"
-            className="bg-transparent h-14 flex-1 rounded-bl rounded-tl border-2 border-blue-500 px-4"
+            className="h-14 flex-1 rounded-bl rounded-tl border-2 border-blue-500 bg-transparent px-4"
           />
 
           <button className="flex h-14 w-28 items-center justify-center gap-4 rounded-br rounded-tr bg-blue-500 px-4 py-3 text-base font-semibold leading-relaxed tracking-wide">

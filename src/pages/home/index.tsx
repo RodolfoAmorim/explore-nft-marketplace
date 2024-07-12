@@ -16,37 +16,37 @@ import LogoMath from '@/assets/images/home/brands/math.png'
 
 export function Home() {
   return (
-    <div className="min-h-svh w-full text-gray-100">
+    <div className="min-h-svh w-full overflow-x-hidden text-gray-100">
       <Header />
 
-      <section className="container relative flex w-full flex-col items-center justify-start gap-16 px-6 pt-12 md:mx-auto">
-        <div className="flex w-full flex-col items-start justify-start gap-8">
-          <h4 className="font-base relative inline-block px-2 py-3 uppercase leading-normal tracking-wide after:absolute after:inset-0 after:-bottom-[3px] after:top-auto after:h-[3px] after:bg-gradient">
+      <section className="container relative flex w-full flex-col items-center justify-start gap-16 px-6 pt-12 md:mx-auto lg:flex-row lg:px-8">
+        <div className="flex w-full flex-col items-start justify-start gap-8 lg:w-auto lg:flex-1 xl:w-full xl:max-w-[788px] xl:flex-auto">
+          <h4 className="font-base relative inline-block px-2 py-3 uppercase leading-normal tracking-wide after:absolute after:inset-0 after:-bottom-[3px] after:top-auto after:h-[3px] after:bg-gradient xl:text-2xl">
             the nft market
           </h4>
 
-          <h1 className="text-[2.5rem] font-black capitalize leading-snug tracking-tight text-slate-50">
+          <h1 className="text-[2.5rem] font-black capitalize leading-snug tracking-tight text-slate-50 xl:text-7xl">
             Unlock Your Digital Destiny: Join the NFT Revolution!
           </h1>
 
-          <p className="text-base font-normal leading-relaxed tracking-wide text-slate-50 opacity-80">
+          <p className="text-base font-normal leading-relaxed tracking-wide text-slate-50 opacity-80 xl:text-lg">
             Embark on a journey where creativity knows no bounds and imagination
             reigns supreme. Welcome to Explore, where digital dreams become
             reality, and every pixel tells a story.
           </p>
 
-          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide shadow-button">
+          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide shadow-button xl:mt-6 xl:w-60">
             Explore NFTs Now
             <ArrowRight />
           </button>
         </div>
 
-        <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat md:relative md:max-w-96 md:after:-inset-20 md:after:h-auto md:after:w-auto md:after:bg-center">
+        <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat md:relative md:max-w-96 md:after:-inset-20 md:after:h-auto md:after:w-auto md:after:bg-center lg:w-auto lg:flex-1 xl:max-w-none 2xl:after:h-[844px] 2xl:after:w-[844px] 2xl:after:bg-cover">
           <img src={HeroCard} alt="" />
         </div>
       </section>
 
-      <aside className="container mx-auto my-20 grid w-full grid-cols-2 items-center justify-center gap-4 px-6 opacity-80">
+      <aside className="container mx-auto my-20 grid w-full grid-cols-2 items-center justify-center justify-items-center gap-4 px-6 opacity-80 lg:grid-cols-3 lg:px-8 xl:my-20 xl:grid-cols-6 2xl:my-40">
         <img src={LogoAlpha} alt="" />
         <img src={LogoEnjin} alt="" />
         <img src={LogoMath} alt="" />
@@ -55,13 +55,13 @@ export function Home() {
         <img src={LogoZengo} alt="" />
       </aside>
 
-      <section className="container mx-auto flex w-full flex-col items-center justify-start gap-12 px-6">
-        <div className="w-full bg-ellipse bg-cover bg-center bg-no-repeat">
+      <section className="container mx-auto flex w-full flex-col items-center justify-start gap-12 px-6 lg:flex-row lg:px-8 xl:max-w-[1384px] 2xl:gap-24">
+        <div className="w-full bg-ellipse bg-cover bg-center bg-no-repeat lg:w-auto lg:flex-1">
           <img src={CardHighlight} alt="" className="mx-auto" />
         </div>
 
-        <div className="flex w-full flex-col items-start justify-start gap-12">
-          <h3 className="text-4xl font-black leading-snug tracking-tight">
+        <div className="flex w-full flex-col items-start justify-start gap-12 lg:w-auto lg:flex-1 xl:w-full xl:max-w-[700px] xl:flex-auto">
+          <h3 className="text-4xl font-black leading-snug tracking-tight xl:text-5xl">
             Are you ready to unlock your digital destiny?
           </h3>
 
@@ -77,8 +77,8 @@ export function Home() {
                 />
               </div>
 
-              <h5 className="flex flex-1 flex-col items-start justify-start text-sm font-semibold leading-relaxed tracking-wide">
-                <small className="text-xs font-normal lowercase leading-snug tracking-wider opacity-80">
+              <h5 className="flex flex-1 flex-col items-start justify-start text-sm font-semibold leading-relaxed tracking-wide xl:text-base">
+                <small className="text-xs font-normal lowercase leading-snug tracking-wider opacity-80 xl:text-sm">
                   Creator
                 </small>
                 Atharvan Maruti
@@ -93,41 +93,41 @@ export function Home() {
             </p>
           </div>
 
-          <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row md:justify-center">
-            <button className="flex h-12 w-full items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide md:w-auto md:flex-1">
+          <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row md:justify-center xl:justify-start">
+            <button className="flex h-12 w-full items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide md:w-auto md:flex-1 xl:w-40 xl:flex-none">
               Place a Bid
             </button>
 
-            <button className="relative flex w-full items-center justify-center bg-slate-900 px-4 py-3 text-base font-semibold leading-relaxed tracking-wider after:absolute after:-inset-px after:-z-10 after:rounded after:bg-gradient md:w-auto md:flex-1">
+            <button className="relative flex w-full items-center justify-center bg-gray-900 px-4 py-3 text-base font-semibold leading-relaxed tracking-wider after:absolute after:-inset-px after:-z-10 after:rounded after:bg-gradient md:w-auto md:flex-1 xl:w-40 xl:flex-none">
               View Art
             </button>
           </div>
         </div>
       </section>
 
-      <section className="mt-24 px-6">
-        <h3 className="text-center text-4xl font-black leading-snug tracking-tight">
+      <section className="container mx-auto mt-24 px-6 lg:px-8 2xl:mt-32">
+        <h3 className="text-center text-4xl font-black leading-snug tracking-tight xl:text-5xl">
           Live Aucition
         </h3>
 
-        <p className="mt-4 text-center text-base font-normal leading-relaxed tracking-wide opacity-80">
+        <p className="mt-4 text-center text-base font-normal leading-relaxed tracking-wide opacity-80 xl:mx-auto xl:mt-6 xl:max-w-[498px] xl:text-lg">
           Own digital art like never before, connect with creators, and explore
           a universe of possibilities
         </p>
 
-        <div className="mt-12 grid w-full grid-cols-1 gap-8 md:grid-cols-2">
-          {Array.from({ length: 4 }).map((_, i) => (
+        <div className="mt-12 grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {Array.from({ length: 8 }).map((_, i) => (
             <Card key={i} />
           ))}
         </div>
       </section>
 
-      <section className="mt-24 px-6">
-        <h3 className="text-center text-4xl font-black leading-snug tracking-tight">
+      <section className="container mx-auto mt-24 px-6 lg:px-8 2xl:mt-32">
+        <h3 className="text-center text-4xl font-black leading-snug tracking-tight xl:text-5xl">
           Popular Sellers
         </h3>
 
-        <p className="mt-4 text-center text-base font-normal leading-relaxed tracking-wide opacity-80">
+        <p className="mt-4 text-center text-base font-normal leading-relaxed tracking-wide opacity-80 xl:mx-auto xl:mt-6 xl:max-w-[498px] xl:text-lg">
           Meet the visionaries behind the pixels, the creators shaping the
           digital frontier
         </p>
@@ -137,15 +137,15 @@ export function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto mt-24 px-6">
-        <div className="flex flex-col items-start justify-start gap-12 ">
-          <h3 className="text-left text-4xl font-black leading-snug tracking-tight">
+      <section className="container mx-auto mt-24 px-6 lg:flex lg:items-center lg:justify-center lg:gap-8 lg:px-8 2xl:mt-32 2xl:gap-48">
+        <div className="flex flex-col items-start justify-start gap-12 lg:flex-1 xl:w-full xl:max-w-[653px] xl:flex-none">
+          <h3 className="text-left text-4xl font-black leading-snug tracking-tight xl:text-5xl">
             Meet the Visionaries: NFT Creators Spotlight
           </h3>
 
           <span className="h-1 w-32 rounded-full bg-gradient" />
 
-          <p className="mt-4 text-left text-base font-normal leading-relaxed tracking-wide opacity-80">
+          <p className="mt-4 text-left text-base font-normal leading-relaxed tracking-wide opacity-80 xl:text-lg">
             Dive into the world of our talented NFT creators, where innovation
             and artistry collide. Each artist brings a unique perspective,
             transforming digital canvases into extraordinary works of art.
@@ -156,28 +156,32 @@ export function Home() {
             Unveil the magic of digital artistry today.
           </p>
 
-          <button className="flex h-12 w-60 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide">
+          <button className="flex h-12 w-60 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide xl:h-16 xl:text-lg">
             Explore Our Creators
           </button>
         </div>
 
-        <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center before:bg-no-repeat">
-          <img src={MeetCards} alt="" className="md:mx-auto md:max-w-[32rem]" />
+        <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center before:bg-no-repeat lg:flex-1">
+          <img
+            src={MeetCards}
+            alt=""
+            className="md:mx-auto md:max-w-[32rem] xl:max-w-[800px]"
+          />
         </div>
       </section>
 
-      <section className="container mx-auto mt-20 w-full px-6">
-        <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl bg-line-blue px-4 py-20">
-          <h3 className="text-center text-3xl font-black leading-snug tracking-tight">
+      <section className="container mx-auto mt-20 w-full px-6 lg:px-8 2xl:mt-32">
+        <div className="flex w-full flex-col items-center justify-center gap-8 rounded-xl bg-line-blue px-4 py-20 lg:mx-auto lg:max-w-[83.125rem]">
+          <h3 className="text-center text-3xl font-black leading-snug tracking-tight xl:text-4xl">
             Secure Nft Trading Platform
           </h3>
 
-          <p className="text-center text-base font-normal leading-relaxed tracking-wide opacity-80">
+          <p className="text-center text-base font-normal leading-relaxed tracking-wide opacity-80 xl:mx-auto xl:max-w-[440px] xl:text-lg">
             An NFT is a unit of a data stored on a digital ledger, called a
             blockchain
           </p>
 
-          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gray-100 px-4 py-3 text-base font-semibold leading-relaxed tracking-wide text-blue-500">
+          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gray-100 px-4 py-3 text-base font-semibold leading-relaxed tracking-wide text-blue-500 xl:h-16 xl:w-[270px] xl:text-lg">
             Explore NFTs Now
           </button>
         </div>

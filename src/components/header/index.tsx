@@ -16,15 +16,15 @@ export function Header() {
   }
 
   return (
-    <header className="container flex h-20 w-full items-center justify-between gap-2 px-6 before:absolute before:left-0 before:top-0 before:-z-10 before:h-40 before:w-52 before:bg-ellipse before:bg-[length:18.5rem_18.5rem] before:bg-right-bottom">
-      <strong className="z-10 text-2xl font-bold leading-relaxed tracking-tight text-gray-100">
+    <header className="container mx-auto flex h-20 w-full items-center justify-between gap-2 px-6 before:absolute before:left-0 before:top-0 before:-z-10 before:h-40 before:w-52 before:bg-ellipse before:bg-[length:18.5rem_18.5rem] before:bg-right-bottom before:bg-no-repeat lg:px-8 xl:h-32 xl:bg-cover xl:before:h-[460px] xl:before:w-[460px] xl:before:bg-[length:200%] xl:before:bg-right-bottom">
+      <strong className="z-10 text-2xl font-bold leading-relaxed tracking-tight text-gray-100 xl:text-4xl">
         Explorer
       </strong>
 
       <Navbar controlMenu={handleShowMobileMenu} showMenu={showMobileMenu} />
 
       <button
-        className="relative z-10 block h-10 w-10 rounded-ssm after:absolute after:-inset-px after:-z-10 after:rounded-ssm after:bg-gradient"
+        className="relative z-10 block h-10 w-10 rounded-ssm after:absolute after:-inset-px after:-z-10 after:rounded-ssm after:bg-gradient xl:hidden"
         onClick={handleShowMobileMenu}
       >
         <span className="flex h-full w-full items-center justify-center rounded-ssm bg-gray-900">
