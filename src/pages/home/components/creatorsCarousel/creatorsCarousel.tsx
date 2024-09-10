@@ -4,7 +4,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
+} from '@/ui/components/ui/carousel'
 import { Creator } from '../creator/creator'
 
 export function CreatorsCarousel() {
