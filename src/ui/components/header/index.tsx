@@ -1,6 +1,8 @@
 import { AlignRight } from 'lucide-react'
 import { Navbar } from '../navbar'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Logo } from '../logo'
 
 export function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -17,9 +19,9 @@ export function Header() {
 
   return (
     <header className="container mx-auto flex h-20 w-full items-center justify-between gap-2 px-6 before:absolute before:left-0 before:top-0 before:-z-10 before:h-40 before:w-52 before:bg-ellipse before:bg-[length:18.5rem_18.5rem] before:bg-right-bottom before:bg-no-repeat lg:px-8 xl:h-32 xl:bg-cover xl:before:h-[460px] xl:before:w-[460px] xl:before:bg-[length:200%] xl:before:bg-right-bottom">
-      <strong className="z-10 text-2xl font-bold leading-relaxed tracking-tight text-gray-100 xl:text-4xl">
-        Explorer
-      </strong>
+      <Link to="/">
+        <Logo />
+      </Link>
 
       <Navbar controlMenu={handleShowMobileMenu} showMenu={showMobileMenu} />
 

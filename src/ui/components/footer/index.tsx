@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
+import { Logo } from '../logo'
 
 export function Footer() {
   return (
     <footer className="container relative mx-auto mt-32 flex w-full flex-col items-center justify-start gap-12 px-6 pb-8 text-center before:absolute before:inset-0 before:top-20 before:-z-10 before:bg-ellipse before:bg-top lg:flex-row lg:flex-wrap lg:justify-center xl:mt-48 xl:flex-row">
-      <strong className="z-10 text-6xl font-bold leading-relaxed tracking-tight text-gray-100 lg:w-full xl:w-auto">
-        Explorer
-      </strong>
+      <Logo className="z-10 text-6xl font-bold leading-relaxed tracking-tight text-gray-100 lg:w-full xl:w-auto" />
 
       <div className="flex w-full flex-col items-center justify-start gap-12 md:flex-row md:gap-0 xl:w-auto xl:flex-1">
         <div className="w-full md:flex-1">

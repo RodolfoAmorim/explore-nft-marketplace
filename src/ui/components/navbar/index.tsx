@@ -1,4 +1,5 @@
 import { X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 interface NavbarItemProps {
   name: string
@@ -52,11 +53,11 @@ export function Navbar({ controlMenu, showMenu }: NavbarProps) {
           <NavbarItem link="/" name="Contacts" />
         </ul>
 
-        <div>
+        <Link to="/login">
           <button className="relative flex items-center justify-center rounded-ssm bg-gray-900 px-6 py-3 before:absolute before:-inset-px before:-z-10 before:rounded-sm before:bg-gradient xl:bg-gradient">
             Connect Wallet
           </button>
-        </div>
+        </Link>
       </div>
     </nav>
   )
