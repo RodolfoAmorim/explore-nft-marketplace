@@ -1,6 +1,5 @@
 import { Header } from '@/ui/components/header'
 import { ArrowRight } from 'lucide-react'
-import { Card } from '@/ui/components/card/card'
 import { CreatorsCarousel } from './components/creatorsCarousel/creatorsCarousel'
 import { Footer } from '@/ui/components/footer'
 
@@ -13,6 +12,7 @@ import LogoEnjin from '@/ui/assets/images/home/brands/enjin.png'
 import LogoZengo from '@/ui/assets/images/home/brands/zengo.png'
 import LogoAlpha from '@/ui/assets/images/home/brands/alpha.png'
 import LogoMath from '@/ui/assets/images/home/brands/math.png'
+import { CardsList } from '@/ui/components/cardsList'
 
 export function Home() {
   return (
@@ -115,11 +115,7 @@ export function Home() {
           a universe of possibilities
         </p>
 
-        <div className="mt-12 grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <Card key={i} />
-          ))}
-        </div>
+        <CardsList />
       </section>
 
       <section className="container mx-auto mt-24 px-6 lg:px-8 2xl:mt-32">

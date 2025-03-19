@@ -1,19 +1,33 @@
+import { CreatorsData } from '@/app/data/creatorsData'
+import { NftModel } from '@/app/models/nftModel'
 import { MoreHorizontal, Star } from 'lucide-react'
 
-export function Card() {
+interface CardProps {
+  info: NftModel
+}
+
+export function Card({ info }: CardProps) {
+  const creator = CreatorsData.find(
+    (creator) => creator.id === Number(info.creatorId),
+  )
+
+  console.log(creator)
+
   return (
     <div className="relative flex w-full flex-col items-center justify-start gap-5 rounded-lg bg-slate-700 p-5 before:absolute before:-inset-0.5 before:-z-10 before:rounded-lg before:bg-line-blue">
       <header className="flex w-full items-center justify-between gap-4">
         <div className="flex flex-1 items-center justify-start gap-2">
           <img
-            src="./images/users/user.png"
+            src={`./images/users/${creator?.photo}`}
             alt=""
             className="aspect-square w-10 rounded-full xl:w-12"
           />
 
           <h5 className="flex flex-col items-start justify-start text-sm font-medium leading-normal tracking-wide xl:text-base">
-            Jonah Pena
-            <small className="text-xs leading-snug opacity-70">@jooh97</small>
+            {creator?.name}
+            <small className="text-xs leading-snug opacity-70">
+              {creator?.username}
+            </small>
           </h5>
         </div>
 
@@ -24,7 +38,7 @@ export function Card() {
 
       <div className="w-full overflow-hidden rounded-lg">
         <img
-          src="./images/arts/art.png"
+          src={`./images/arts/${info.image}`}
           alt=""
           className="h-48 w-full object-cover"
         />
@@ -34,15 +48,16 @@ export function Card() {
         <div className="flex w-full items-center justify-between gap-4">
           <div className="flex flex-col items-start justify-start">
             <strong className="text-sm font-medium leading-normal tracking-wide xl:text-base">
-              Abstract Lights
+              {info.name}
             </strong>
 
             <div className="flex items-center justify-start gap-1">
-              <Star className="w-3 fill-yellow-500 text-yellow-500 xl:w-4" />
-              <Star className="w-3 fill-yellow-500 text-yellow-500 xl:w-4" />
-              <Star className="w-3 fill-yellow-500 text-yellow-500 xl:w-4" />
-              <Star className="w-3 fill-yellow-500 text-yellow-500 xl:w-4" />
-              <Star className="w-3 fill-yellow-500 text-yellow-500 xl:w-4" />
+              {Array.from({ length: info.rating }).map((_, i) => (
+                <Star
+                  key={i}
+                  className="w-3 fill-yellow-500 text-yellow-500 xl:w-4"
+                />
+              ))}
             </div>
           </div>
 
@@ -64,7 +79,7 @@ export function Card() {
             </small>
 
             <p className="text-sm font-medium leading-normal tracking-wide xl:text-base">
-              1,50 BTC
+              {info.price.toFixed(1)} BTC
             </p>
           </div>
 

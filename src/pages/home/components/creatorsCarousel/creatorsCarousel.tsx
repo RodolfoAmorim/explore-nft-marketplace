@@ -6,14 +6,15 @@ import {
   CarouselPrevious,
 } from '@/ui/components/ui/carousel'
 import { Creator } from '../creator/creator'
+import { CreatorsData } from '@/app/data/creatorsData'
 
 export function CreatorsCarousel() {
   return (
     <Carousel opts={{ loop: true }}>
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, i) => (
-          <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
-            <Creator />
+        {CreatorsData.map((creator) => (
+          <CarouselItem key={creator.id} className="md:basis-1/2 lg:basis-1/3">
+            <Creator info={creator} />
           </CarouselItem>
         ))}
       </CarouselContent>
