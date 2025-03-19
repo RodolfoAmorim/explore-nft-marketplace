@@ -13,6 +13,7 @@ import LogoZengo from '@/ui/assets/images/home/brands/zengo.png'
 import LogoAlpha from '@/ui/assets/images/home/brands/alpha.png'
 import LogoMath from '@/ui/assets/images/home/brands/math.png'
 import { CardsList } from '@/ui/components/cardsList'
+import { Buttons } from '@/ui/components/buttons/buttons'
 
 export function Home() {
   return (
@@ -35,10 +36,10 @@ export function Home() {
             reality, and every pixel tells a story.
           </p>
 
-          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide shadow-button xl:mt-6 xl:w-60">
+          <Buttons className="xl:mt-6 xl:w-60">
             Explore NFTs Now
             <ArrowRight />
-          </button>
+          </Buttons>
         </div>
 
         <div className="flex w-full items-center justify-center after:absolute after:bottom-0 after:right-0 after:-z-10 after:h-[28rem] after:w-56 after:bg-ellipse after:bg-[length:28.6rem_28.6rem] after:bg-left-top after:bg-no-repeat md:relative md:max-w-96 md:after:-inset-20 md:after:h-auto md:after:w-auto md:after:bg-center lg:w-auto lg:flex-1 xl:max-w-none 2xl:after:h-[844px] 2xl:after:w-[844px] 2xl:after:bg-cover">
@@ -94,13 +95,11 @@ export function Home() {
           </div>
 
           <div className="flex w-full flex-col items-center justify-start gap-4 md:flex-row md:justify-center xl:justify-start">
-            <button className="flex h-12 w-full items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide md:w-auto md:flex-1 xl:w-40 xl:flex-none">
-              Place a Bid
-            </button>
+            <Buttons className="xl:w-40 xl:flex-none">Place a Bid</Buttons>
 
-            <button className="relative flex w-full items-center justify-center bg-gray-900 px-4 py-3 text-base font-semibold leading-relaxed tracking-wider after:absolute after:-inset-px after:-z-10 after:rounded after:bg-gradient md:w-auto md:flex-1 xl:w-40 xl:flex-none">
+            <Buttons variant={'secondary'} className="xl:w-40 xl:flex-none">
               View Art
-            </button>
+            </Buttons>
           </div>
         </div>
       </section>
@@ -152,9 +151,9 @@ export function Home() {
             Unveil the magic of digital artistry today.
           </p>
 
-          <button className="flex h-12 w-60 items-center justify-center gap-4 rounded bg-gradient px-4 py-3 text-base font-semibold leading-relaxed tracking-wide xl:h-16 xl:text-lg">
+          <Buttons size={'lg'} className="w-60">
             Explore Our Creators
-          </button>
+          </Buttons>
         </div>
 
         <div className="relative mt-20 w-full before:absolute before:inset-0 before:-z-10 before:bg-ellipse before:bg-contain before:bg-center before:bg-no-repeat lg:flex-1">
@@ -177,9 +176,9 @@ export function Home() {
             blockchain
           </p>
 
-          <button className="flex h-12 items-center justify-center gap-4 rounded bg-gray-100 px-4 py-3 text-base font-semibold leading-relaxed tracking-wide text-blue-500 xl:h-16 xl:w-[270px] xl:text-lg">
+          <Buttons variant={'white'} size={'lg'} className=" xl:w-[270px]">
             Explore NFTs Now
-          </button>
+          </Buttons>
         </div>
       </section>
 

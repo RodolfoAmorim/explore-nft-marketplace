@@ -1,5 +1,6 @@
 import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Buttons } from '../buttons/buttons'
 
 interface NavbarItemProps {
   name: string
@@ -17,7 +18,7 @@ function NavbarItem({
   return (
     <li
       data-active={active}
-      className="data-[active='true']:text-gray-100 xl:text-lg xl:font-normal xl:leading-normal xl:tracking-widest xl:text-gray-400"
+      className="transition-colors data-[active='true']:text-gray-100 lg:hover:text-gray-100 xl:text-lg xl:font-normal xl:leading-normal xl:tracking-widest xl:text-gray-400"
     >
       <a href={link} target={blank ? '_blank' : ''} rel="noreferrer">
         {name}
@@ -54,9 +55,10 @@ export function Navbar({ controlMenu, showMenu }: NavbarProps) {
         </ul>
 
         <Link to="/login">
-          <button className="relative flex items-center justify-center rounded-ssm bg-gray-900 px-6 py-3 before:absolute before:-inset-px before:-z-10 before:rounded-sm before:bg-gradient xl:bg-gradient">
+          <Buttons variant={'secondary'} className="xl:hidden">
             Connect Wallet
-          </button>
+          </Buttons>
+          <Buttons className="hidden xl:flex">Connect Wallet</Buttons>
         </Link>
       </div>
     </nav>

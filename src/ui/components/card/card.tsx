@@ -1,6 +1,7 @@
 import { CreatorsData } from '@/app/data/creatorsData'
 import { NftModel } from '@/app/models/nftModel'
 import { MoreHorizontal, Star } from 'lucide-react'
+import { Buttons } from '../buttons/buttons'
 
 interface CardProps {
   info: NftModel
@@ -83,9 +84,9 @@ export function Card({ info }: CardProps) {
             </p>
           </div>
 
-          <button className="flex h-8 items-center justify-center gap-4 rounded bg-gradient px-4 text-xs font-semibold leading-normal tracking-wide xl:text-sm">
+          <Buttons size={'sm'} className="xl:text-sm">
             Place a Bid
-          </button>
+          </Buttons>
         </div>
       </div>
     </div>

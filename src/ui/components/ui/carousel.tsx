@@ -204,7 +204,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'relative h-8 w-8 rounded border-none bg-gray-900 before:absolute before:-inset-px before:-z-10 before:rounded before:bg-gradient xl:h-14 xl:w-14',
+        'relative h-8 w-8 rounded border-none bg-gray-900 transition-colors before:absolute before:-inset-px before:-z-10 before:rounded before:bg-gradient hover:bg-gray-800 xl:h-14 xl:w-14',
         orientation === 'horizontal' ? '' : '',
         className,
       )}
@@ -230,7 +230,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        'relative h-8 w-8 rounded border-none bg-gray-900 before:absolute before:-inset-px before:-z-10 before:rounded before:bg-gradient xl:h-14 xl:w-14',
+        'relative h-8 w-8 rounded border-none bg-gray-900 transition-colors before:absolute before:-inset-px before:-z-10 before:rounded before:bg-gradient hover:bg-gray-800 xl:h-14 xl:w-14',
         orientation === 'horizontal' ? '' : '',
         className,
       )}
