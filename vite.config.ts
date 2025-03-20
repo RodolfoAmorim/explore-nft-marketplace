@@ -10,6 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: '/explore-nft-marketplace',
   server: {
     host: true,
   },
