@@ -57,7 +57,7 @@ Contribuições são bem-vindas! Se você tiver alguma ideia para melhorar o pro
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
 
 ## Contato

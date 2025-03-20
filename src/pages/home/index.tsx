@@ -72,7 +72,7 @@ export function Home() {
             <div className="flex items-center justify-center gap-4">
               <div className="relative h-14 w-14 rounded-full p-0.5 after:absolute after:inset-0 after:-z-10 after:rounded-full after:bg-gradient">
                 <img
-                  src="./images/users/user.png"
+                  src="./explore-nft-marketplace/images/users/user.png"
                   alt=""
                   className="rounded-full"
                 />
@@ -132,7 +132,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto mt-24 px-6 lg:flex lg:items-center lg:justify-center lg:gap-8 lg:px-8 2xl:mt-32 2xl:gap-48">
+      <section className="container mx-auto mt-24 px-6 lg:flex lg:items-center lg:justify-center lg:gap-8 lg:px-8 2xl:mt-32 2xl:justify-between">
         <div className="flex flex-col items-start justify-start gap-12 lg:flex-1 xl:w-full xl:max-w-[653px] xl:flex-none">
           <h3 className="text-left text-4xl font-black leading-snug tracking-tight xl:text-5xl">
             Meet the Visionaries: NFT Creators Spotlight

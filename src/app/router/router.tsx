@@ -5,8 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/explore-nft-marketplace" element={<Home />} />
+      <Route path="/explore-nft-marketplace/login" element={<Login />} />
     </Routes>
   )
 }

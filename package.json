@@ -1,6 +1,6 @@
 {
+  "name": "explore",
   "homepage": "https://rodolfoamorim.github.io/explore-nft-marketplace",
-  "name": "nft",
   "private": true,
   "version": "0.0.0",
   "type": "module",
