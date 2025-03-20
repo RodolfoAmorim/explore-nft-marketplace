@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+# Explore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://raw.githubusercontent.com/RodolfoAmorim/assets/master/explore/cover.png" alt="Exemplo imagem">
 
-Currently, two official plugins are available:
+> Bem-vindo ao **Explore**, um projeto de estudo desenvolvido em React com TypeScript. Esta aplicação simula uma página de venda de NFTs, onde é possível visualizar cards de NFTs com informações como imagem, valor e detalhes dos usuários criadores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Funcionalidades
 
-## Expanding the ESLint configuration
+- Exibição de NFTs em cards estilizados, contendo imagem, título, valor e informações do criador.
+- Diferentes perfis de usuários podem ser associados aos NFTs, destacando a diversidade de criadores na plataforma.
+- Design adaptável para uma experiência consistente em diferentes dispositivos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Tecnologias usadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática opcional.
+- **Tailwind**: Framework CSS para estilização da interface.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [ ] Criação de sistema de cadastro e login
+- [ ] Edição de perfil
+- [ ] Adição e alteração de NFTs
+- [ ] Sistema para simular compras
+
+## 🚀 Instalando
+
+Para instalar o Explore, siga estas etapas:
+
+1. Clone o projeto:
+
+```
+git clone https://github.com/RodolfoAmorim/explore-nft-marketplace.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instale as dependências:
+
+```
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+4. Abra o navegador e acesse http://localhost:5173 para visualizar o dashboard.
+
+
+## 📫 Contribuições
+
+Contribuições são bem-vindas! Se você tiver alguma ideia para melhorar o projeto ou encontrar algum bug, por favor, abra uma issue ou envie um pull request.
+
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+
+## Contato
+
+Para mais informações, entre em contato através do e-mail [rodolfoamorim36@gmail.com](mailto:rodolfoamorim36@gmail.com)
