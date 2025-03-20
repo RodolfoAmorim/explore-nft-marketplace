@@ -72,7 +72,7 @@ export function Home() {
             <div className="flex items-center justify-center gap-4">
               <div className="relative h-14 w-14 rounded-full p-0.5 after:absolute after:inset-0 after:-z-10 after:rounded-full after:bg-gradient">
                 <img
-                  src="./explore-nft-marketplace/images/users/user.png"
+                  src="./images/users/user.png"
                   alt=""
                   className="rounded-full"
                 />

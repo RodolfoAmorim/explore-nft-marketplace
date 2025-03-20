@@ -19,7 +19,7 @@ export function Card({ info }: CardProps) {
       <header className="flex w-full items-center justify-between gap-4">
         <div className="flex flex-1 items-center justify-start gap-2">
           <img
-            src={`./explore-nft-marketplace/images/users/${creator?.photo}`}
+            src={`./images/users/${creator?.photo}`}
             alt=""
             className="aspect-square w-10 rounded-full xl:w-12"
           />
@@ -39,7 +39,7 @@ export function Card({ info }: CardProps) {
 
       <div className="w-full overflow-hidden rounded-lg">
         <img
-          src={`./explore-nft-marketplace/images/arts/${info.image}`}
+          src={`./images/arts/${info.image}`}
           alt=""
           className="h-48 w-full object-cover"
         />
